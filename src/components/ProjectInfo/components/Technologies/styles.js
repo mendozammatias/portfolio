@@ -6,6 +6,7 @@ export const useStyles = makeStyles({
     flexWrap: 'wrap',
     justifyContent: 'space-around',
     overflow: 'hidden',
+    paddingTop: 16
   },
   gridList: {
     width: '100%',
