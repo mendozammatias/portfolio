@@ -6,23 +6,23 @@ import Typography from '@material-ui/core/Typography';
 
 import {useStyles} from "./styles";
 
-export default function MediaControlCard() {
+const CompanyCard = ({name, website, role, logo }) => {
   const classes = useStyles();
 
   return (
     <Card className={classes.root}>
       <CardMedia
         className={classes.cover}
-        image="/static/images/cards/live-from-space.jpg"
-        title="Live from space album cover"
+        image={logo}
+        title="name"
       />
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
-            Live From Space
+            {name}
           </Typography>
           <Typography variant="subtitle1" color="textSecondary">
-            Mac Miller
+            {role}
           </Typography>
         </CardContent>
       </div>
@@ -30,3 +30,5 @@ export default function MediaControlCard() {
     </Card>
   );
 }
+
+export default CompanyCard

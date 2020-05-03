@@ -6,22 +6,35 @@ import {ChevronLeft, ChevronRight} from '@material-ui/icons';
 import {projects} from "../../constants/projects";
 import ProjectCard from "../ProjectCard";
 import {useStyles} from './styles'
+import {useProjectContext} from "../../hooks/useProject";
 
 const Carousel = () => {
-  const CarouselRef = useRef(null)
+  const {setProjectIdx} = useProjectContext()
+  const carouselRef = useRef(null)
   const classes = useStyles()
+
+  const onBackClick = async () => {
+    await carouselRef?.current?.prev()
+    setProjectIdx(carouselRef?.current?.getCurrentIndex())
+  }
+
+  const onNextClick = async () => {
+    await carouselRef?.current?.next()
+    setProjectIdx(carouselRef?.current?.getCurrentIndex())
+  }
+
   return (
     <Box className={classes.container}>
       <Fab
         color="primary"
         aria-label="button-left"
-        onClick={() => CarouselRef?.current?.prev()}
+        onClick={onBackClick}
         className={classes.fab}
       >
         <ChevronLeft/>
       </Fab>
       <ReactCardCarousel
-        ref={CarouselRef}
+        ref={carouselRef}
         disable_box_shadow={true}
         spread={'wide'}>
         {projects.map((props, index) => (<ProjectCard key={index} {...props}/>))}
@@ -29,7 +42,7 @@ const Carousel = () => {
       <Fab
         color="primary"
         aria-label="button-right"
-        onClick={() => CarouselRef?.current?.next()}
+        onClick={onNextClick}
         className={classes.fab}
       >
         <ChevronRight/>

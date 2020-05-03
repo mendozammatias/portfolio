@@ -1,32 +1,35 @@
 import React from 'react'
-import {bool} from 'prop-types'
+import {string} from 'prop-types'
 
 import {GitHub} from "@material-ui/icons";
 import {Fab} from "@material-ui/core";
 
 import {useStyles} from './styles'
 
-const Repository = ({isPWA}) => {
-  const classes = useStyles({isPWA})
+const Repository = ({link}) => {
+  const classes = useStyles()
   return (
     <Fab
       variant="extended"
       size="medium"
       aria-label="pwa"
       className={classes.fab}
+      onClick={link}
     >
       <GitHub className={classes.icon}/>
       View on Github
     </Fab>
   )
+
+
 }
 
 Repository.propTypes = {
-  isPWA: bool
+  link: string
 }
 
 Repository.defaultProps = {
-  isPWA: false
+  link: null
 }
 
 Repository.displayName = 'Repository'

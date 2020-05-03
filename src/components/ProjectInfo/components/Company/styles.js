@@ -1,24 +1,22 @@
 import {makeStyles} from "@material-ui/core/styles";
 
-export const useStyles = makeStyles((theme) => ({
+export const useStyles = makeStyles({
+  root: {
+    display: 'flex',
+    padding: 16
+  },
   details: {
     display: 'flex',
     flexDirection: 'column',
+    minWidth: 205
   },
   content: {
     flex: '1 0 auto',
   },
   cover: {
-    width: 151,
+    width: 150,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'contain',
+    backgroundPosition: 'center',
   },
-  controls: {
-    display: 'flex',
-    alignItems: 'center',
-    paddingLeft: theme.spacing(1),
-    paddingBottom: theme.spacing(1),
-  },
-  playIcon: {
-    height: 38,
-    width: 38,
-  },
-}));
+})
