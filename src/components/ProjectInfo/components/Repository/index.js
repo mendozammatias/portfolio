@@ -17,7 +17,10 @@ const Repository = ({link}) => {
           size="medium"
           aria-label="pwa"
           className={classes.fab}
-          onClick={link}
+          component={'a'}
+          target="_blank"
+          rel="noopener noreferer"
+          href={link}
         >
           <GitHub className={classes.icon}/>
           View on Github

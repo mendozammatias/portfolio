@@ -72,7 +72,7 @@ export const projects = [
     pwa: true,
     link: null,
     reason: "When changes were ready, they decided replace it with another one 🤷🏻‍.",
-    code: null,
+    code: 'https://github.com/mendozammatias/covid-19',
     company: companies.BlackBoxVision,
     technologies: [
       technologies.Javascript, technologies.React
@@ -147,7 +147,7 @@ export const projects = [
     pwa: true,
     link: 'https://www.blackbox-vision.tech/',
     reason: 'Here you can see our info!',
-    code: null,
+    code: 'https://github.com/mendozammatias/bbv-website',
     company: companies.BlackBoxVision,
     technologies: [
       technologies.Javascript, technologies.PostgreSQL, technologies.NodeJS, technologies.NextJS, technologies.React
