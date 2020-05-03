@@ -70,7 +70,7 @@ export const projects = [
     backgroundColor: '#FCFCFC',
     image: Covid,
     pwa: true,
-    link: null,
+    link: 'https://blackboxvision.gitlab.io/covid-19/corona-app/',
     reason: "When changes were ready, they decided replace it with another one 🤷🏻‍.",
     code: 'https://github.com/mendozammatias/covid-19',
     company: companies.BlackBoxVision,
