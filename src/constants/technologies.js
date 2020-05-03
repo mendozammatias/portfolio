@@ -30,6 +30,11 @@ export default {
     link: 'https://reactjs.org/',
     image: React
   },
+  ReactNative: {
+    name: 'React Native',
+    link: 'https://reactnative.dev/',
+    image: React
+  },
   NextJS: {
     name: 'NextJS',
     link: 'https://nextjs.org/',

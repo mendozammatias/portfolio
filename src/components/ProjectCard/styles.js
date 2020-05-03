@@ -7,13 +7,6 @@ export const useStyles = makeStyles({
     maxWidth: 500,
     minHeight: 450
   },
-  actionArea: {
-    height: '85%',
-    width: '100%',
-    position: 'absolute',
-    bottom: 0,
-    borderRadius: 16,
-  },
   projectCard: {
     textDecoration: 'none',
     width: '100%',
@@ -26,7 +19,13 @@ export const useStyles = makeStyles({
     paddingLeft: 16,
     paddingBottom: 32,
     paddingRight: 16
-
+  },
+  actionArea: {
+    height: '85%',
+    width: '100%',
+    position: 'absolute',
+    bottom: 0,
+    borderRadius: 16,
   },
   projectImageContainer: ({backgroundColor}) => ({
     width: '88%',

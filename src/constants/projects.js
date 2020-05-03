@@ -26,7 +26,7 @@ export const projects = [
     image: Portfolio,
     pwa: true,
     link: 'https://www.blackbox-vision.tech/remote-working',
-    reason: null,
+    reason: 'Made with lot of love ❤.',
     code: 'https://github.com/mendozammatias/portfolio',
     company: companies.BlackBoxVision,
     technologies: [
@@ -41,7 +41,7 @@ export const projects = [
     image: RemoteWorking,
     pwa: true,
     link: 'https://www.blackbox-vision.tech/remote-working',
-    reason: null,
+    reason: 'BlackBox Vision little contribution based on our experience.',
     code: null,
     company: companies.BlackBoxVision,
     technologies: [
@@ -56,7 +56,7 @@ export const projects = [
     image: BBVBlog,
     pwa: true,
     link: 'https://blog.blackbox-vision.tech/',
-    reason: null,
+    reason: 'You can read some of my last posts 😁.',
     code: null,
     company: companies.BlackBoxVision,
     technologies: [
@@ -86,7 +86,7 @@ export const projects = [
     image: BBVOss,
     pwa: true,
     link: 'https://opensource.blackbox-vision.tech/',
-    reason: null,
+    reason: 'We have several OSS projects you can check here!',
     code: null,
     company: companies.BlackBoxVision,
     technologies: [
@@ -146,7 +146,7 @@ export const projects = [
     image: BBVSite,
     pwa: true,
     link: 'https://www.blackbox-vision.tech/',
-    reason: null,
+    reason: 'Here you can see our info!',
     code: null,
     company: companies.BlackBoxVision,
     technologies: [
@@ -191,7 +191,7 @@ export const projects = [
     image: AcercandoNaciones,
     pwa: true,
     link: 'https://acercandonaciones.com/',
-    reason: null,
+    reason: 'Traffic was triplicated since the new version is in produciton.',
     code: null,
     company: companies.BlackBoxVision,
     technologies: [
