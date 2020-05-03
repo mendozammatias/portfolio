@@ -28,18 +28,29 @@ export const useStyles = makeStyles({
     paddingRight: 16
 
   },
-  projectImage: ({image}) => ({
-    background: `url(${image})`,
+  projectImageContainer: ({backgroundColor}) => ({
     width: '88%',
     height: '55%',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundColor: '#FFFFFF',
     position: 'absolute',
     left: '6%',
     borderRadius: 16,
-    boxShadow: '0px 4px 30px rgba(0, 0, 0, 0.2)'
+    boxShadow: '0px 4px 30px rgba(0, 0, 0, 0.2)',
+    backgroundColor,
+    padding: 32,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  }),
+  projectImage: ({image}) => ({
+    background: `url(${image})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'contain',
+    backgroundPosition: 'center',
+    width: '100%',
+    height: '100%',
+    borderRadius: 16,
+    boxShadow: 'none',
+    padding: 32
   })
 });
 

@@ -3,6 +3,7 @@ import {Grid, Box} from "@material-ui/core";
 import MyCard from './components/Company'
 import PWA from './components/PWA'
 import Technologies from './components/Technologies'
+import Repository from "./components/Repository";
 
 const ProjectInfo = () => {
 
@@ -11,6 +12,7 @@ const ProjectInfo = () => {
       <Grid item xs={12} md={6}
             style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between'}}>
         <PWA/>
+        <Repository/>
       <Box style={{display: 'flex'}}>
         <MyCard/>
         <MyCard/>

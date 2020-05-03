@@ -1,4 +1,4 @@
-import React from 'src/static/images/technologies/react.svg'
+import React from '../static/images/technologies/react.svg'
 
 export default {
   React: {

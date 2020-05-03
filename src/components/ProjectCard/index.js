@@ -4,8 +4,8 @@ import {Paper, Box, CardActionArea} from '@material-ui/core'
 import {useStyles} from './styles'
 import ProjectInfo from "./components/ProjectInfo";
 
-const ProjectCard = ({year, title, description, image, link}) => {
-  const classes = useStyles({image});
+const ProjectCard = ({year, title, description, image, link, backgroundColor}) => {
+  const classes = useStyles({image, backgroundColor});
   return (
     <Box className={classes.container}>
       <CardActionArea
@@ -19,7 +19,9 @@ const ProjectCard = ({year, title, description, image, link}) => {
           />
         </Paper>
       </CardActionArea>
-      <Paper className={classes.projectImage}/>
+      <Paper className={classes.projectImageContainer}>
+        <Paper className={classes.projectImage}/>
+      </Paper>
     </Box>
   )
 }
