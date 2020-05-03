@@ -3,7 +3,8 @@ import {makeStyles} from "@material-ui/core/styles";
 export const useStyles = makeStyles({
   root: {
     display: 'flex',
-    padding: 16
+    padding: 16,
+    textDecoration: 'none'
   },
   details: {
     display: 'flex',

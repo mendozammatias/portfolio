@@ -12,10 +12,15 @@ export const useStyles = makeStyles({
     height: 'auto',
   },
   tile: {
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'contain',
-    backgroundPosition: 'center',
     padding: 8,
-    borderRadius: 16
+    borderRadius: 16,
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'transparent',
+    boxShadow: 'none'
+  },
+  image: {
+    width: '100%',
+    height: '100%'
   }
 })

@@ -1,16 +1,18 @@
 import React from 'react';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Typography from '@material-ui/core/Typography';
+import {Card, CardContent, CardMedia, Typography} from '@material-ui/core';
 
 import {useStyles} from "./styles";
 
-const CompanyCard = ({name, website, role, logo }) => {
+const CompanyCard = ({name, website, role, logo}) => {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card
+      className={classes.root}
+      component={'a'}
+      target="_blank"
+      rel="noopener noreferer"
+      href={website}>
       <CardMedia
         className={classes.cover}
         image={logo}

@@ -13,10 +13,8 @@ const {currentProject} = useProjectContext()
       <Grid item xs={12} md={6}
             style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between'}}>
         <PWA isPWA={currentProject.pwa}/>
-        { currentProject.code &&       <Repository link={currentProject.code}/>}
+        <Repository link={currentProject.code}/>
         <CompanyCard {...currentProject.company}/>
-        Mi Rol
-        Holas
       </Grid>
       <Grid item xs={12} md={6}>
         <Technologies data={currentProject.technologies}/>

@@ -22,7 +22,7 @@ export default {
   },
   TypeScript: {
     name: 'TypeScript',
-    link: 'https://reactjs.org/',
+    link: 'https://www.typescriptlang.org/',
     image: TypeScript
   },
   React: {
