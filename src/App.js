@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import theme from './theme'
+import {ThemeProvider, CssBaseline, Container} from '@material-ui/core'
+import {makeStyles} from "@material-ui/core/styles";
+import Carousel from './components/Carousel'
+import ProjectInfo from "./components/ProjectInfo";
 
-function App() {
+const useStyles = makeStyles({
+  container: {
+    width: '100vw',
+    height: '100vh',
+  }
+})
+
+const App = () => {
+  const classes = useStyles()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ThemeProvider theme={theme}>
+      <CssBaseline/>
+      <Container className={classes.container}>
+        <Carousel/>
+        <ProjectInfo/>
+      </Container>
+    </ThemeProvider>
+  )
 }
 
 export default App;
