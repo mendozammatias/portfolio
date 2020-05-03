@@ -25,7 +25,7 @@ export const projects = [
     backgroundColor: '#FFFFFF',
     image: Portfolio,
     pwa: true,
-    link: 'https://www.blackbox-vision.tech/remote-working',
+    link: 'https://blackboxvision.gitlab.io/portfolio/matias/',
     reason: 'Made with lot of love ❤.',
     code: 'https://github.com/mendozammatias/portfolio',
     company: companies.BlackBoxVision,
