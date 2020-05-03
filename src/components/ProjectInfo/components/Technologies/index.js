@@ -10,8 +10,8 @@ const Technologies = ({data}) => {
       Tecnologías
       <div className={classes.root} style={{paddingTop: 16}}>
         <GridList cellHeight={160} className={classes.gridList} cols={3}>
-          {data.map(({name, image, link}) => (
-            <GridListTile key={name} cols={1}>
+          {data.map(({name, image, link}, index) => (
+            <GridListTile key={`${name}_${index}`} cols={1}>
               <Tooltip title={name}>
                 <Paper
                   component={'a'}

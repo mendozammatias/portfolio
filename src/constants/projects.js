@@ -30,7 +30,7 @@ export const projects = [
     code: 'https://github.com/mendozammatias/portfolio',
     company: companies.BlackBoxVision,
     technologies: [
-      technologies.Javascript, technologies.TypeScript, technologies.React
+      technologies.Javascript, technologies.React
     ]
   },
   {
@@ -45,7 +45,7 @@ export const projects = [
     code: null,
     company: companies.BlackBoxVision,
     technologies: [
-      technologies.React
+      technologies.Javascript, technologies.GatsbyJS, technologies.React
     ]
   },
   {
@@ -60,7 +60,7 @@ export const projects = [
     code: null,
     company: companies.BlackBoxVision,
     technologies: [
-      technologies.React
+      technologies.Javascript, technologies.TypeScript, technologies.NestJS, technologies.Ghost, technologies.React, technologies.GatsbyJS
     ]
   },
   {
@@ -69,13 +69,13 @@ export const projects = [
     description: "Refactor of the official Argentinian government app for COVID-19.",
     backgroundColor: '#FCFCFC',
     image: Covid,
-    pwa: false,
+    pwa: true,
     link: null,
     reason: "When changes were ready, they decided replace it with another one 🤷🏻‍.",
     code: null,
     company: companies.BlackBoxVision,
     technologies: [
-      technologies.React
+      technologies.Javascript, technologies.React
     ]
   },
   {
@@ -90,7 +90,7 @@ export const projects = [
     code: null,
     company: companies.BlackBoxVision,
     technologies: [
-      technologies.React
+      technologies.Javascript, technologies.React, technologies.NextJS, technologies.GatsbyJS
     ]
   },
   {
@@ -105,7 +105,7 @@ export const projects = [
     code: null,
     company: companies.BlackBoxVision,
     technologies: [
-      technologies.React
+      technologies.Javascript, technologies.React
     ]
   },
   {
@@ -120,7 +120,7 @@ export const projects = [
     code: null,
     company: companies.BlackBoxVision,
     technologies: [
-      technologies.React
+      technologies.Javascript, technologies.TypeScript, technologies.ReactNative, technologies.PostgreSQL, technologies.GraphQL, technologies.NodeJS
     ]
   },
   {
@@ -135,7 +135,7 @@ export const projects = [
     code: null,
     company: companies.BlackBoxVision,
     technologies: [
-      technologies.React
+      technologies.Javascript, technologies.React, technologies.GatsbyJS, technologies.PostgreSQL, technologies.NodeJS, technologies.NestJS,
     ]
   },
   {
@@ -150,7 +150,7 @@ export const projects = [
     code: null,
     company: companies.BlackBoxVision,
     technologies: [
-      technologies.React
+      technologies.Javascript, technologies.PostgreSQL, technologies.NodeJS, technologies.NextJS, technologies.React
     ]
   },
   {
@@ -165,7 +165,7 @@ export const projects = [
     code: null,
     company: companies.Leniolabs,
     technologies: [
-      technologies.React
+      technologies.Javascript, technologies.React
     ]
   },
   {
@@ -180,7 +180,7 @@ export const projects = [
     code: null,
     company: companies.Leniolabs,
     technologies: [
-      technologies.React
+      technologies.Javascript, technologies.React
     ]
   },
   {
@@ -195,7 +195,7 @@ export const projects = [
     code: null,
     company: companies.BlackBoxVision,
     technologies: [
-      technologies.React
+      technologies.Javascript, technologies.React,  technologies.PostgreSQL, technologies.NodeJS, technologies.NextJS
     ]
   },
   {
@@ -210,7 +210,7 @@ export const projects = [
     code: null,
     company: companies.SAMSistemas,
     technologies: [
-      technologies.React
+      technologies.TypeScript, technologies.Redux, technologies.ReduxSaga, technologies.PostgreSQL, technologies.React, technologies.NodeJS
     ]
   },
   {
@@ -225,7 +225,7 @@ export const projects = [
     code: null,
     company: companies.SAMSistemas,
     technologies: [
-      technologies.React
+      technologies.TypeScript, technologies.Redux, technologies.ReduxSaga, technologies.PostgreSQL, technologies.React, technologies.NodeJS
     ]
   },
   {
@@ -240,7 +240,7 @@ export const projects = [
     code: null,
     company: companies.SAMSistemas,
     technologies: [
-      technologies.React
+      technologies.Javascript, technologies.ReactNative, technologies.Redux, technologies.ReduxSaga, technologies.Facebook, technologies.Google
     ]
   },
 

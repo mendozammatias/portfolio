@@ -8,7 +8,6 @@ import PostgreSQL from '../static/images/technologies/postgresql.svg'
 import GraphQL from '../static/images/technologies/graphql.svg'
 import Redux from '../static/images/technologies/redux.svg'
 import ReduxSaga from '../static/images/technologies/redux-saga.svg'
-import MPSDK from '../static/images/technologies/mercadopago.png'
 import FBSDK from '../static/images/technologies/facebook.svg'
 import GoogleSDK from '../static/images/technologies/google-icon.svg'
 import GatsbyJS from '../static/images/technologies/gatsby.svg'
@@ -69,11 +68,6 @@ export default {
     name: 'React',
     link: 'https://redux-saga.js.org/',
     image: ReduxSaga
-  },
-  MercadoPago: {
-    name: 'MercadoPago SDK',
-    link: 'https://www.mercadopago.com.ar/developers/es/plugins_sdks',
-    image: MPSDK
   },
   Facebook: {
     name: 'Facebook Social Login',
