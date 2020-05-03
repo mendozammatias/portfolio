@@ -27,10 +27,10 @@ export const projects = [
     pwa: true,
     link: 'https://www.blackbox-vision.tech/remote-working',
     reason: null,
-    code: null,
+    code: 'https://github.com/mendozammatias/portfolio',
     company: companies.BlackBoxVision,
     technologies: [
-      technologies.React
+      technologies.Javascript, technologies.TypeScript, technologies.React
     ]
   },
   {
